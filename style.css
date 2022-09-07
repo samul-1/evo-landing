@@ -31,7 +31,7 @@
 
 #hero {
     height: 75vh;
-    background-image: url(img/hero-bg.png);
+    background-image: url(img/hero-bg-min.png);
     background-position: 0%;
     background-size: cover;
 }
@@ -71,7 +71,7 @@ p {
 
 footer {
     height: 500px;
-    background-image: url(img/footer-bg.png);
+    background-image: url(img/footer-bg-min.png);
     background-position: 0%;
     background-size: cover;
     background-repeat: no-repeat;
