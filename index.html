@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="screenshot-frames.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Sarabun", sans-serif;
+      }
+    </style>
+
+    <title>Evo learning</title>
+  </head>
+  <body class="">
+    <!-- hero -->
+    <!-- relative grad-bg bg-gradient overflow-hidden -->
+    <section
+      id="hero"
+      style="height: 60%"
+      class="overflow-hidden relative z-50"
+    >
+      <div
+        style="height: 65%"
+        class="grid grid-cols-3 gap-x-12 px-2 md:px-24 xl:pt-10 lg:pt-10 pt-0 pb-52 overflow-hidden"
+      >
+        <div class="col-span-3 md:col-span-2 flex flex-col space-y-12">
+          <h1 class="text-purple-300 font-medium xl:text-6xl text-5xl">
+            Evo &mdash; per la preparazione ed erogazione di esami universitari
+          </h1>
+          <div class="pl-1 md:w-2/3 text-purple-300">
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis autem corrupti eius minus inventore libero placeat.
+              Eius facilis similique maxime ad ipsam officiis accusantium,
+              exercitationem sed tempore earum eligendi laborum. Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Quibusdam, libero
+              reiciendis corrupti aperiam unde eaque.
+            </p> -->
+            <p>
+              Evo è la piattaforma di erogazione degli esami universitari
+              utilizzata da molti corsi dell'Università di Pisa. Dalla creazione
+              di esercizi, alla correzione delle risposte, passando per le
+              esercitazioni di preparazione all'esame, Evo permette ai docenti
+              di raggiungere la massima produttività e agli studenti di ottenere
+              la migliore preparazione possibile.
+            </p>
+          </div>
+        </div>
+        <div class="md:flex hidden">
+          <img src="img/undraw_6.svg" class="hero-img ml-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- features overview -->
+    <section class="relative z-50 2xl:mt-20 -mt-20 md:mt-10">
+      <div
+        class="flex items-center md:flex-row flex-col md:place-content-evenly md:space-y-0 space-y-8"
+      >
+        <!-- feature block -->
+        <a href="#practice">
+          <div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="feature-icon-container flex rounded grad-bg">
+              <div
+                class="material-symbols-outlined feature-icon m-auto text-blue-200"
+              >
+                fitness_center
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-center text-xs">
+              Preparazione agli esami in autonomia
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+        <!-- feature block -->
+        <a href="#coding-exercises"
+          ><div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="feature-icon-container flex rounded grad-bg">
+              <div
+                class="material-symbols-outlined feature-icon m-auto text-blue-200"
+              >
+                code
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-center text-xs">
+              Esercizi di programmazione
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+        <!-- feature block -->
+        <a href="#stats">
+          <div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="feature-icon-container flex rounded grad-bg">
+              <div
+                class="material-symbols-outlined feature-icon m-auto text-blue-200"
+              >
+                insights
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-center text-xs">
+              Statistiche di performance
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+
+        <!-- feature block -->
+        <a href="#goals">
+          <div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="feature-icon-container flex rounded grad-bg">
+              <div
+                class="material-symbols-outlined feature-icon m-auto text-blue-200"
+              >
+                <svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-center text-xs">
+              Obiettivi di studio
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+
+        <!-- feature block -->
+        <a href="#threads">
+          <div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="feature-icon-container flex rounded grad-bg">
+              <div
+                class="material-symbols-outlined feature-icon m-auto text-blue-200"
+              >
+                forum
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-center text-xs">
+              Condivisione della conoscenza
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+      </div>
+    </section>
+    <!-- mobile & desktop screenshots -->
+    <section class="hidden mt-36 lg:grid grid-cols-5 w-10/12">
+      <div class="col-span-2 items-center bg-red-200 z-10 bg-opacity-0 flex">
+        <img
+          style="width: 180px"
+          class="ml-auto -mr-28 -mb-40"
+          src="img/iphone-trimmy.png"
+        />
+      </div>
+      <div class="col-span-3 bg-blue-300 bg-opacity-0 flex items-center">
+        <img src="img/macbook-trimmy.png" class="mr-auto -ml-4" />
+      </div>
+    </section>
+    <section class="mt-36 flex w-full lg:hidden">
+      <div class="mx-auto">
+        <img style="width: 100%" src="img/iphoneandmacbook.png" />
+      </div>
+    </section>
+    <!-- features in-depth -->
+    <main
+      class="px-2 md:px-24 mt-52 md:mt-40 overflow-hidden relative"
+      style="z-index: 2"
+    >
+      <h2 class="text-3xl xl:text-6xl font-medium mb-12 text-center">
+        Tour delle funzionalità
+      </h2>
+
+      <!-- feature description-->
+      <section id="practice" class="grid grid-cols-12 my-12">
+        <div class="w-full my-auto col-span-12 md:col-span-5">
+          <h3 class="text-2xl font-medium mb-4 -mr-10">
+            Preparazione agli esami in autonomia
+          </h3>
+          <p class="mb-2">
+            Evo mette a disposizione un ricco database di migliaia di esercizi
+            per molte materie, suddivisi per argomento e difficoltà. Inoltre, i
+            docenti che creano nuovi esercizi per utilizzarli in prove d'esame
+            possono pubblicarli al termine della prova.
+          </p>
+          <p>
+            In pochi clic, gli studenti possono creare simulazioni di prove
+            d'esame mirate a esercitarsi su specifici argomenti, sfruttando gli
+            esercizi usati in esami passati. Al termine delle simulazioni, viene
+            mostrato un feedback sulla performance e le soluzioni degli
+            esercizi.
+          </p>
+        </div>
+        <div class="col-span-12 -mr-24 md:col-span-7">
+          <!-- style="transform: translateX(8%)" -->
+          <img src="img/practice-list-framed-cropped.png" />
+        </div>
+      </section>
+      <!-- end feature description -->
+
+      <!-- feature description-->
+      <section id="coding-exercises" class="grid grid-cols-12 gap-x-12 my-24">
+        <div class="w-full mt-32 col-span-12 md:col-span-7">
+          <h3 class="text-2xl font-medium mb-4 -mr-10">
+            Esercizi di programmazione
+          </h3>
+          <p class="mb-2">
+            Tra le tante tipologie di domande supportate, Evo permette la
+            creazione di esercizi di programmazione in vari linguaggi, tra cui
+            JavaScript, TypeScript, C e Python. Il docente definisce dei test
+            case utilizzati per verificare la correttezza delle soluzioni degli
+            studenti.
+          </p>
+          <p class="mb-8">
+            Il codice dello studente è eseguito da Evo insieme ai test case; lo
+            studente ottiene un feedback istantaneo e il voto è calcolato
+            automaticamente.
+          </p>
+          <img class="-ml-4" src="img/prog-exercise-framed.png" />
+        </div>
+        <div class="col-span-5 my-auto md:block hidden">
+          <img style="width: 600px !important" src="img/js-editor.png" />
+        </div>
+      </section>
+      <!-- end feature description -->
+
+      <!-- feature description-->
+      <section id="stats" class="grid grid-cols-12 mt-12">
+        <div class="w-full my-auto col-span-12 md:col-span-5">
+          <h3 class="text-2xl font-medium mb-4 -mr-10">
+            Statistiche di performance
+          </h3>
+          <p class="mb-2">
+            I docenti hanno a disposizione viste, grafici e statistiche per
+            tracciare l'andamento degli studenti, sia nei singoli esami che
+            globalmente.
+          </p>
+          <p>
+            È possibile tenere traccia di quali sono gli esercizi con più
+            risposte errate, della distribuzione di voti nelle prove d'esame, e
+            dell'attività di ciascuno studente all'interno dei corsi.
+          </p>
+        </div>
+        <!--  style="transform: translateX(8%)" -->
+        <div class="col-span-12 md:col-span-7 -mr-24">
+          <img src="img/exam-stats-framed-cropped.png" />
+        </div>
+      </section>
+      <!-- end feature description -->
+
+      <!-- feature description-->
+      <section
+        id="goals"
+        style="width: 100%"
+        class="grid grid-cols-12 gap-x-12 my-24"
+      >
+        <div class="md:hidden w-full mt-32 col-span-12 md:col-span-5">
+          <h3 class="text-2xl font-medium mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            delectus exercitationem cumque perferendis quasi neque, dignissimos
+            similique saepe accusamus? Nesciunt vero nostrum similique quo esse
+            fugit quae dicta veniam tempore!
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-7">
+          <!-- <img
+            src="img/leaderboard-framed.png"
+            style="transform: translateX(-10%)"
+          />
+          <img
+            class="shadow-lg"
+            style="transform: translateX(5%) translateY(-50%) scale(90%)"
+            src="img/goals.png"
+          /> -->
+          <img src="img/goalsandleaderboard.png" />
+        </div>
+        <div
+          class="md:block hidden w-full -mt-20 md:mt-32 md:mb-0 mb-32 col-span-12 md:col-span-5"
+        >
+          <h3 class="text-2xl font-medium mb-4">
+            Obiettivi di studio e classifica
+          </h3>
+          <p class="mb-2">
+            I docenti possono definire obiettivi di studio su più livelli per
+            gli studenti. Il raggiungimento degli obiettivi fa guadagnare punti
+            e badge agli studenti.
+          </p>
+          <p>
+            Per ogni corso, è presente una classifica che indica gli studenti
+            più attivi. La sana componente competitiva incentiva gli studenti a
+            partecipare attivamente nella didattica e a rimanere in pari.
+          </p>
+        </div>
+      </section>
+      <!-- end feature description -->
+
+      <!-- feature description-->
+      <section id="threads" class="relative grid grid-cols-12 my-0">
+        <div class="w-full mb-auto col-span-12 md:col-span-5 my-auto">
+          <h3 class="text-2xl font-medium mb-4 -mr-10">
+            Condivisione della conoscenza
+          </h3>
+          <p class="mb-2">
+            In aggiunta a consultare le soluzioni scritte dai docenti, gli
+            studenti possono proprorre le proprie soluzioni per gli esercizi
+            pubblici.
+          </p>
+          <p>
+            Tutti possono votare e commentare le soluzioni pubblicate dagli
+            altri studenti, favorendo così la condivisione di conoscenza e
+            contribuendo a trovare metodi alternativi per risolvere gli
+            esercizi.
+          </p>
+        </div>
+        <!-- style="transform: translateX(1%)" -->
+        <div class="col-span-12 md:col-span-7 -mr-24">
+          <img src="img/exercise-thread-framed-2-cropped.png" />
+        </div>
+      </section>
+      <!-- end feature description -->
+
+      <!-- customers -->
+      <section class="mt-32 flex">
+        <div class="mx-auto flex flex-col items-center">
+          <h3 class="text-2xl opacity-60 mb-4">Utilizzato da</h3>
+          <a href="https://evo.di.unipi.it" class=""
+            ><div class="feature-icon-container grad-bg p-4 rounded w-max">
+              <img src="img/unipi.svg" style="width: 350px" /></div
+          ></a>
+        </div>
+      </section>
+
+      <!-- numbers -->
+      <section class="mt-40">
+        <h3 class="text-4xl font-medium mb-12 text-center">I nostri numeri</h3>
+        <div class="flex items-center place-content-evenly flex-wrap">
+          <!-- number section -->
+          <div
+            id="numbers-section"
+            class="flex flex-col items-center space-y-3"
+          >
+            <div class="flex items-center space-x-2">
+              <p
+                class="text-5xl material-symbols-outlined grad-bg"
+                style="color: var(--grad-end)"
+              >
+                school
+              </p>
+              <h4 class="text-5xl" id="number-1">800</h4>
+            </div>
+            <p class="text-xl">Studenti</p>
+          </div>
+          <!-- end number section -->
+
+          <!-- number section -->
+          <div class="flex flex-col items-center space-y-3">
+            <div class="flex items-center space-x-2">
+              <p
+                class="text-5xl material-symbols-outlined grad-bg"
+                style="color: var(--grad-end)"
+              >
+                topic
+              </p>
+              <h4 class="text-5xl" id="number-2">1700</h4>
+            </div>
+            <p class="text-xl">Esercizi</p>
+          </div>
+          <!-- end number section -->
+
+          <!-- number section -->
+          <div class="flex flex-col items-center space-y-3">
+            <div class="flex items-center space-x-2">
+              <p
+                class="text-5xl material-symbols-outlined grad-bg"
+                style="color: var(--grad-end)"
+              >
+                fitness_center
+              </p>
+              <h4 class="text-5xl" id="number-3">8500</h4>
+            </div>
+            <p class="text-xl">Simulazioni d'esame autonome</p>
+          </div>
+          <!-- end number section -->
+
+          <!-- number section -->
+          <div class="flex flex-col items-center space-y-3">
+            <div class="flex items-center space-x-2">
+              <p
+                class="text-5xl material-symbols-outlined grad-bg"
+                style="color: var(--grad-end)"
+              >
+                assignment
+              </p>
+              <h4 class="text-5xl" id="number-4">60</h4>
+            </div>
+            <p class="text-xl">Prove d'esame</p>
+          </div>
+          <!-- end number section -->
+        </div>
+      </section>
+
+      <!-- contact -->
+      <div class="flex w-full mt-32">
+        <!--
+          style="
+            box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+              rgba(60, 64, 67, 0.15) 0 2px 6px 2px !important;
+          "
+        -->
+        <div
+          class="mx-auto mb-4 flex flex-col items-center space-y-4 border-blue-600 border rounded-md py-10 px-32"
+        >
+          <h3 class="text-2xl">Domande?</h3>
+          <a href="mailto:s.bonini7@studenti.unipi.it"
+            ><button
+              class="text-lg feature-icon-container grad-bg bg-blue-600 hover:bg-blue-800 text-white rounded px-3 py-2"
+            >
+              Contattaci
+            </button></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- <div
+      class="relative"
+      style="width: 180%; bottom: -400px; margin-top: -40rem; left: -40rem"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,234.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div> -->
+    <footer class="px-12 pb-4 text-purple-200" style="padding-top: 200px">
+      <div class="z-50 relative flex flex-col h-full">
+        <p class="mt-auto">
+          Crafted with ❤️ by
+          <a class="text-blue-300 hover:underline" href="https://bsamu.it"
+            >Samuele Bonini</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
