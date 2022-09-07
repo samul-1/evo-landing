@@ -11,11 +11,17 @@ function animateValue(obj, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
+let animated = false;
+
 function animateValues() {
+  if (animated) {
+    return;
+  }
   animateValue(document.getElementById("number-1"), 100, 800, 1500);
   animateValue(document.getElementById("number-2"), 1000, 1700, 1500);
   animateValue(document.getElementById("number-3"), 1000, 8500, 1500);
   animateValue(document.getElementById("number-4"), 10, 60, 1500);
+  animated = true;
 }
 
 const options = {
