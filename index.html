@@ -22,6 +22,10 @@
       sizes="16x16"
       href="favicon/favicon-16x16.png"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
     <link rel="manifest" href="favicon/site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,9 +97,9 @@
       </div>
     </section>
     <!-- features overview -->
-    <section class="relative z-50 -mt-20 2xl:mt-20 md:mt-10">
+    <section class="relative z-50 -mt-20 2xl:mt-20 md:mt-0">
       <div
-        class="flex flex-col items-center space-y-8 md:flex-row md:place-content-evenly md:space-y-0"
+        class="grid grid-cols-2 md:grid-cols-3 lg:items-center gap-x-0 gap-y-12 lg:flex lg:flex-row lg:place-content-evenly lg:space-y-0"
       >
         <!-- feature block -->
         <a href="#practice">
@@ -185,6 +189,24 @@
             <!-- t -->
             <p style="line-height: 13px" class="w-40 text-xs text-center">
               Condivisione della conoscenza
+            </p>
+          </div></a
+        >
+        <!-- end feature block -->
+
+        <!-- feature block -->
+        <a href="#donate">
+          <div class="flex flex-col items-center space-y-2 feature-block">
+            <div class="flex rounded feature-icon-container grad-bg">
+              <div
+                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
+              >
+                diversity_1
+              </div>
+            </div>
+            <!-- t -->
+            <p style="line-height: 13px" class="w-40 text-xs text-center">
+              Open source
             </p>
           </div></a
         >
@@ -464,6 +486,43 @@
           </div>
           <!-- end number section -->
         </div>
+      </section>
+
+      <!-- support us -->
+      <section id="donate" class="flex flex-col items-center mt-20 md:mt-40">
+        <h3 class="mb-4 text-4xl text-center">Supporta il progetto</h3>
+        <p class="text-lg">
+          Evo è un
+          <a
+            class="grad-bg link hover:text-blue-900"
+            href="https://github.com/Evo-Learning-project"
+            >progetto open source</a
+          >. Se vuoi supportarne lo sviluppo, considera di effettuare una
+          donazione per il progetto.
+        </p>
+        <p class="mb-8 text-lg">Ti ringraziamo in anticipo!</p>
+
+        <a href="https://paypal.me/bsamusp00?country.x=IT&locale.x=it_IT"
+          ><button
+            class="flex items-center px-3 py-2 text-lg text-white bg-blue-600 rounded feature-icon-container grad-bg hover:bg-blue-800"
+          >
+            <!-- <span class="mr-2 material-symbols-outlined">
+              volunteer_activism
+            </span> -->
+            <span
+              style="
+                filter: invert(100%) sepia(49%) saturate(1934%)
+                  hue-rotate(177deg) brightness(104%) contrast(102%);
+                font-size: 26px;
+              "
+              class="mr-2 text-white material-icons-two-tone"
+            >
+              volunteer_activism
+            </span>
+
+            <span class="text-xl">Dona</span>
+          </button></a
+        >
       </section>
 
       <!-- contact -->
