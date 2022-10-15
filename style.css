@@ -51,7 +51,8 @@
 
 #hero {
     height: 75vh;
-    background-image: url(img/hero-bg-min.png);
+    background: url(img/hero-bg-min.png);
+    background: url(img/hero-bg-min.png), linear-gradient(180deg, rgba(115,5,253,1) 70%, transparent 30%); 
     background-position: 0%;
     background-size: cover;
 }
