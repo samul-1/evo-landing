@@ -17,16 +17,16 @@ function animateValues() {
   if (animated) {
     return;
   }
-  animateValue(document.getElementById("number-1"), 1000, 1050, 1500);
-  animateValue(document.getElementById("number-2"), 1000, 1787, 1500);
-  animateValue(document.getElementById("number-3"), 10000, 10102, 1500);
-  animateValue(document.getElementById("number-4"), 10, 65, 1500);
+  animateValue(document.getElementById("number-1"), 1000, 1391, 1500);
+  animateValue(document.getElementById("number-2"), 1000, 2085, 1500);
+  animateValue(document.getElementById("number-3"), 10000, 20548, 1500);
+  animateValue(document.getElementById("number-4"), 10, 75, 1500);
   animated = true;
 }
 
 const options = {
   root: null,
-  threshold: 0.25, // 0 - 1 this work as a trigger.
+  threshold: 0.25, // 0 - 1 this works as a trigger.
   rootMargin: "0px",
 };
 

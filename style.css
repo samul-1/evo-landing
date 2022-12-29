@@ -1,111 +1,130 @@
 .grad-bg {
-    --grad-start: rgba(115,5,253,1);
-    --grad-mid-1: rgba(97,30,210,1);
-    --grad-mid-2: rgba(51,96,243,1);
-    --grad-end : rgba(41,111,249,1);
+  --grad-start: rgba(115, 5, 253, 1);
+  --grad-mid-1: rgba(97, 30, 210, 1);
+  --grad-mid-2: rgba(51, 96, 243, 1);
+  --grad-end: rgba(41, 111, 249, 1);
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 .elevated {
-    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%),
-			0px 1px 5px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 
 .feature-icon {
-    font-size: 40px !important;
+  font-size: 40px !important;
 }
 
 .feature-icon-container {
-    padding: 4px;
-    background-color: var(--grad-end);
-    /* background-image: linear-gradient(135deg, rgba(255,255,255,.14) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,.08) 75%); */
-    background-image: linear-gradient(135deg, rgba(255,255,255,.1) 50%, rgba(0,0,0,0) 50%);
+  padding: 4px;
+  background-color: var(--grad-end);
+  /* background-image: linear-gradient(135deg, rgba(255,255,255,.14) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,.08) 75%); */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(0, 0, 0, 0) 50%
+  );
 }
 
 .grad-text {
-    background-color: #f3ec78;
-    background-image: linear-gradient(150deg, var(--grad-start) 0%, var(--grad-mid-1) 22%, var(--grad-mid-2) 83%, var(--grad-end) 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    150deg,
+    var(--grad-start) 0%,
+    var(--grad-mid-1) 22%,
+    var(--grad-mid-2) 83%,
+    var(--grad-end) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .link {
-    text-decoration: underline;
-    color: var(--grad-mid-2);
+  text-decoration: underline;
+  color: var(--grad-mid-2);
 }
 
 .hero-img {
-    width: 330px;
-    height: auto;
+  width: 330px;
+  height: auto;
 }
 
 #hero {
-    height: 75vh;
-    background: url(img/hero-bg-min.png);
-    background: url(img/hero-bg-min.png), linear-gradient(180deg, rgba(115,5,253,1) 70%, transparent 30%); 
-    background-position: 0%;
-    background-size: cover;
+  height: 75vh;
+  background: url(img/hero-bg-min.png);
+  background: url(img/hero-bg-min.png),
+    linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
+  background-position: 0%;
+  background-size: cover;
 }
 
 .wave-container {
-display: inline-block;
-position: relative;
-width: 100%;
-padding-bottom: 100%;
-vertical-align: middle;
-overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .wave-container svg {
-display: inline-block;
-position: absolute;
-top: 0;
-left: 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .shape .gradient-bg {
-    fill: url(#header-shape-gradient) #fff;
-  }
+  fill: url(#header-shape-gradient) #fff;
+}
 
 p {
-    letter-spacing: .85px;
+  letter-spacing: 0.85px;
 }
 
 .cta-but {
-    background-color: #7305fd;
+  background-color: #7305fd;
 }
 
 .cta-but:hover {
-    background-color: #6202d6;
+  background-color: #6202d6;
 }
 
 .bg-gradient {
-    background: rgb(115,5,253);
-    background: linear-gradient(150deg, var(--grad-start) 0%, var(--grad-mid-1) 22%, var(--grad-mid-2) 83%, var(--grad-end) 100%) !important;
+  background: rgb(115, 5, 253);
+  background: linear-gradient(
+    150deg,
+    var(--grad-start) 0%,
+    var(--grad-mid-1) 22%,
+    var(--grad-mid-2) 83%,
+    var(--grad-end) 100%
+  ) !important;
 }
 
 .bg-gradient-rev {
-    background: linear-gradient(150deg, var(--grad-end) 0%, var(--grad-mid-2) 22%, var(--grad-mid-1) 83%, var(--grad-start) 100%) !important;
+  background: linear-gradient(
+    150deg,
+    var(--grad-end) 0%,
+    var(--grad-mid-2) 22%,
+    var(--grad-mid-1) 83%,
+    var(--grad-start) 100%
+  ) !important;
 }
 
 .feature-block:hover {
-    filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 footer {
-    height: 500px;
-    background-image: url(img/footer-bg-min.png);
-    background-position: 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 500px;
+  background-image: url(img/footer-bg-min.png);
+  background-position: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
