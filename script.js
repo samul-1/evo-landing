@@ -17,10 +17,10 @@ function animateValues() {
   if (animated) {
     return;
   }
-  animateValue(document.getElementById("number-1"), 1000, 1391, 1500);
-  animateValue(document.getElementById("number-2"), 1000, 2085, 1500);
-  animateValue(document.getElementById("number-3"), 10000, 20548, 1500);
-  animateValue(document.getElementById("number-4"), 10, 75, 1500);
+  animateValue(document.getElementById("number-1"), 1000, 1691, 1500);
+  animateValue(document.getElementById("number-2"), 1000, 2285, 1500);
+  animateValue(document.getElementById("number-3"), 10000, 26548, 1500);
+  animateValue(document.getElementById("number-4"), 10, 77, 1500);
   animated = true;
 }
 
