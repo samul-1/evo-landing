@@ -19,8 +19,8 @@ function animateValues() {
   }
   animateValue(document.getElementById("number-1"), 1000, 1691, 1500);
   animateValue(document.getElementById("number-2"), 1000, 2285, 1500);
-  animateValue(document.getElementById("number-3"), 10000, 26548, 1500);
-  animateValue(document.getElementById("number-4"), 10, 77, 1500);
+  animateValue(document.getElementById("number-3"), 10000, 30248, 1500);
+  animateValue(document.getElementById("number-4"), 10, 81, 1500);
   animated = true;
 }
 
