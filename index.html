@@ -18,6 +18,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="screenshot-frames.css" />
     <link
@@ -25,7 +32,9 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="script.js" defer></script>
+
     <script
       data-goatcounter="https://evo.goatcounter.com/count"
       async
@@ -42,647 +51,380 @@
       content="lms, learning, learning management system, education, university, università di pisa, programming, evo, studio, esami universitari, esercitazioni, analisi matematica, programmazione, algoritmica, algebra, grading, apprendimento, computer science, informatica, unipi, dad, didattica a distanza, esami online"
     />
 
+    <link rel="stylesheet" href="carousel.css" />
+
     <style>
       html {
         scroll-behavior: smooth;
       }
       body {
-        font-family: "Sarabun", sans-serif;
+        /* font-family: "Sarabun", sans-serif; */
+        font-family: "Montserrat", sans-serif;
       }
     </style>
 
     <title>Evo Learning</title>
   </head>
   <body class="">
-    <!-- hero -->
-    <!-- relative grad-bg bg-gradient overflow-hidden -->
-    <section
-      id="hero"
-      style="height: 60%"
-      class="relative z-50 overflow-hidden"
-    >
-      <div
-        style="height: 65%"
-        class="grid grid-cols-3 px-3 pt-2 overflow-hidden gap-x-12 md:px-12 lg:px-24 xl:pt-8 lg:pt-8 md:pt-6 pb-52"
-      >
-        <div
-          class="flex flex-col col-span-3 space-y-4 bg-blue-420 md:space-y-6 lg:space-y-8 md:col-span-2"
-        >
-          <!-- <h1
-            class="text-5xl font-medium text-purple-300 lg:text-6xl xl:text-6xl"
-          >
-            Evo Learning
-          </h1> -->
-          <div
-            class="flex items-center w-8/12 px-6 py-1 mr-auto bg-white rounded-full 2xl:w-2/5 lg:w-1/2"
-            style="
-              box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-                0 1px 3px 1px rgba(60, 64, 67, 0.15);
-            "
-          >
-            <img class="" src="assets/logo.png" />
-            <!-- <h1
-              class="text-5xl font-medium text-purple-300 lg:text-6xl xl:text-6xl"
-            >
-              Evo Learning
-            </h1> -->
-          </div>
+    <!-- wave heading -->
+    <section id="heading"></section>
+    <main class="mx-40">
+      <!-- logo -->
+      <img class="w-2/5 mx-auto mt-6 mb-4" src="img/logo.png" alt="Evo" />
 
-          <div class="pl-1 text-purple-300 lg:w-11/12">
-            <p class="mb-4 text-lg">
-              Evo Learning è una piattaforma di apprendimento online completa
-              che fornisce un'esperienza personalizzata agli studenti e consente
-              ai docenti di gestire ogni aspetto della didattica. Dalla
-              creazione di esercizi, alla correzione delle risposte, passando
-              per le esercitazioni di preparazione all'esame, Evo Learning
-              permette ai docenti di raggiungere la massima produttività e agli
-              studenti di ottenere la migliore preparazione possibile.
-              <br />
-              Con Evo Learning, l'efficienza incontra la flessibilità. Insegna e
-              impara quando vuoi, dove vuoi, come vuoi!
-            </p>
-            <!-- <a class="" href="https://try.evo-learning.com"
-              ><button
-                class="flex items-center px-3 py-2 mb-4 text-purple-100 transition-colors duration-100 rounded opacity-100 cta-but elevated feature-icon-container"
-              >
-                <span
-                  style="
-                    filter: invert(88%) sepia(6%) saturate(1889%)
-                      hue-rotate(203deg) brightness(104%) contrast(105%);
-                  "
-                  class="mr-2 text-2xl text-purple-100 material-icons-two-tone"
-                >
-                  rocket_launch
-                </span>
-
-                <span class="text-lg">Provalo ora!</span>
-              </button></a
-            > -->
-          </div>
-        </div>
-        <div class="hidden md:flex">
-          <img src="img/undraw_6.svg" class="ml-auto hero-img" />
-          <!-- <img src="img/hero_img.png" class="ml-auto hero-img" /> -->
-        </div>
-      </div>
-    </section>
-    <!-- features overview -->
-    <section class="relative z-50 -mt-20 2xl:mt-20 md:mt-0">
-      <div
-        class="grid grid-cols-2 lg:items-center md:grid-cols-3 gap-x-0 gap-y-12 lg:flex lg:flex-row lg:place-content-evenly lg:space-y-0"
-      >
-        <!-- feature block -->
-        <a href="#practice">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                fitness_center
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Preparazione agli esami in autonomia
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-        <!-- feature block -->
-        <a href="#coding-exercises"
-          ><div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                code
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Esercizi di programmazione
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-        <!-- feature block -->
-        <a href="#material">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                book
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Pubblicazione del materiale didattico
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-        <!-- feature block -->
-        <a href="#stats">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                insights
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Statistiche di performance
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-
-        <!-- feature block -->
-        <a href="#goals">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <!-- <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                <svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z"
-                  />
-                </svg>
-              </div> -->
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                sports_esports
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Gamification
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-
-        <!-- feature block -->
-        <a href="#threads">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                forum
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Social learning
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-
-        <!-- feature block -->
-        <a href="#threads">
-          <div class="flex flex-col items-center space-y-2 feature-block">
-            <div class="flex rounded feature-icon-container grad-bg">
-              <div
-                class="m-auto text-blue-200 material-symbols-outlined feature-icon"
-              >
-                extension
-              </div>
-            </div>
-            <!-- t -->
-            <p style="line-height: 13px" class="w-40 text-xs text-center">
-              Integrazioni
-            </p>
-          </div></a
-        >
-        <!-- end feature block -->
-      </div>
-    </section>
-
-    <!-- mobile & desktop screenshots -->
-    <!-- <section class="hidden w-10/12 grid-cols-5 mt-36 lg:grid">
-      <div class="z-10 flex items-center col-span-2 bg-red-200 bg-opacity-0">
-        <img
-          style="width: 200px"
-          class="ml-auto -mb-64 -mr-36"
-          src="img/features/framed/esercitazione-analisi-mobile_iphone13.png"
-        />
-      </div>
-      <div class="flex items-center col-span-3 bg-blue-300 bg-opacity-0">
-        <img
-          src="img/features/framed/exam-editor-macbookpro.png"
-          class="mr-auto -ml-4"
-        />
-      </div>
-    </section> -->
-    <section class="flex w-full lg:pl-20 mt-36">
-      <img
-        class="hidden mx-auto lg:block"
-        style="width: 60%"
-        src="assets/iphone-n-mac-min.png"
-      />
-      <img
-        class="mx-auto md:hidden"
-        style="width: 100%"
-        src="assets/iphone-n-mac-min.png"
-      />
-      <img
-        class="hidden mx-auto md:block lg:hidden"
-        style="width: 80%"
-        src="assets/iphone-n-mac-min.png"
-      />
-    </section>
-    <!-- features in-depth -->
-    <main
-      class="relative px-4 overflow-hidden rounded-t-2xl md:px-10 lg:px-24 mt-52 md:mt-40"
-      style="z-index: 2"
-    >
-      <!--padding-top: 15px;
-        box-shadow: 0px -4px 20px rgba(50, 50, 50, 0.1);-->
-      <h2
-        class="mb-12 text-4xl font-medium text-center md:mb-16 md:mt-8 md:text-5xl xl:text-6xl"
-      >
-        Tour delle funzionalità
-      </h2>
-
-      <!-- feature description-->
-      <section
-        id="practice"
-        class="grid grid-cols-12 my-12 md:gap-x-4 lg:gap-x-10 md:gap-y-0 gap-y-4"
-      >
-        <div class="w-full col-span-12 my-auto md:col-span-5">
-          <h3 class="mb-4 text-2xl font-medium">
-            Preparazione agli esami in autonomia
-          </h3>
-          <p class="mb-2">
-            Evo mette a disposizione un ricco database di migliaia di esercizi
-            per molte materie, suddivisi per argomento e difficoltà. Inoltre, i
-            docenti che creano nuovi esercizi per utilizzarli in prove d'esame
-            possono pubblicarli al termine della prova.
-          </p>
-          <p>
-            In pochi clic, gli studenti possono creare simulazioni di prove
-            d'esame mirate a esercitarsi su specifici argomenti, sfruttando gli
-            esercizi usati in esami passati. Al termine delle simulazioni, viene
-            mostrato un feedback sulla performance e le soluzioni degli
-            esercizi.
+      <div class="flex items-center space-x-8">
+        <!-- slogan-->
+        <div>
+          <h1 class="text-6xl font-medium">
+            La piattaforma di e-learning
+            <span class="text-primary">più viola</span> d'Italia
+          </h1>
+          <p class="mt-10 text-xl">
+            L'efficienza incontra la flessibilità. Insegna e impara quando vuoi,
+            dove vuoi, come vuoi!
           </p>
         </div>
-        <div class="col-span-12 md:-mr-24 md:col-span-7">
-          <!-- style="transform: translateX(8%)" -->
-          <img class="" src="assets/practice-min.png" />
-          <!-- <img class="md:hidden" src="img/min/practice-list-framed-min.png" /> -->
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- feature description-->
-      <section
-        id="coding-exercises"
-        class="grid grid-cols-12 my-12 md:my-24 md:gap-x-12"
-      >
-        <div class="w-full col-span-12 lg:mt-32 md:col-span-7">
-          <h3 class="mb-4 text-2xl font-medium">Esercizi di programmazione</h3>
-          <p class="mb-2">
-            Tra le tante tipologie di domande supportate, Evo permette la
-            creazione di esercizi di programmazione in vari linguaggi, tra cui
-            JavaScript, TypeScript, C e Python. Il docente definisce dei test
-            case utilizzati per verificare la correttezza delle soluzioni degli
-            studenti.
-          </p>
-          <p class="mb-8">
-            Il codice dello studente è eseguito da Evo insieme ai test case; lo
-            studente ottiene un feedback istantaneo e il voto è calcolato
-            automaticamente.
-          </p>
-          <img class="md:-ml-4" src="assets/js-exercise-student-min.png" />
-        </div>
-        <div class="hidden col-span-5 my-auto md:block">
-          <img
-            style="
-              width: 600px !important;
-              filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
-            "
-            class=""
-            src="assets/js-editor-min.png"
-          />
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- feature description-->
-      <section
-        id="material"
-        class="grid grid-cols-12 mt-12 mb-20 md:gap-x-4 lg:gap-x-10 md:gap-y-0 gap-y-4"
-      >
-        <div class="order-12 col-span-12 md:-ml-24 md:col-span-7 md:order-0">
-          <!-- style="transform: translateX(8%)" -->
-          <img class="" src="assets/material-min.png" />
-          <!-- <img class="md:hidden" src="img/min/practice-list-framed-min.png" /> -->
-        </div>
-        <div class="w-full col-span-12 my-auto md:order-12 md:col-span-5">
-          <h3 class="mb-4 text-2xl font-medium">
-            Pubblicazione del materiale didattico
-          </h3>
-          <p class="mb-2">
-            Evo permette ai docenti di pubblicare lezioni e annunci, di creare
-            sondaggi e di allegare alle lezioni contenuti multimediali.
-            All'insegnante bastano pochi semplici passi per poter condividere
-            qualsiasi tipologia di contenuto didattico con tutta la classe.
-          </p>
-          <p>
-            Gli studenti possono accedere facilmente al materiale, condividerlo
-            con altri e aggiungere commenti. Grazie al visualizzatore di file
-            integrato, gli studenti possono visionare direttamente sulla
-            piattaforma qualsiasi tipo di contenuto multimediale, che si tratti
-            di un PDF, di un video o di un'immagine.
-          </p>
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- feature description-->
-      <section
-        id="stats"
-        class="grid grid-cols-12 mt-6 mb-10 md:mb-0 md:mt-12 md:gap-x-4 lg:gap-x-10 md:gap-y-0 gap-y-4"
-      >
-        <div class="w-full col-span-12 my-auto md:col-span-5">
-          <h3 class="mb-4 text-2xl font-medium">Statistiche di performance</h3>
-          <p class="mb-2">
-            I docenti hanno a disposizione viste, grafici e statistiche per
-            tracciare l'andamento degli studenti, sia nei singoli esami che
-            globalmente.
-          </p>
-          <p>
-            È possibile tenere traccia di quali sono gli esercizi con più
-            risposte errate, della distribuzione di voti nelle prove d'esame, e
-            dell'attività di ciascuno studente all'interno dei corsi.
-          </p>
-        </div>
-        <!--  style="transform: translateX(8%)" -->
-        <div class="col-span-12 md:-mr-24 md:col-span-7">
-          <img class="" src="assets/exam-stats-min.png" />
-          <!-- <img class="md:hidden" src="img/min/exam-stats-framed-min.png" /> -->
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- feature description-->
-      <section
-        id="goals"
-        style="width: 100%"
-        class="grid grid-cols-12 my-0 md:my-24 md:gap-x-6 lg:gap-x-12"
-      >
-        <div class="w-full col-span-12 mt-0 mb-4 md:hidden md:col-span-5">
-          <h3 class="mb-4 text-2xl font-medium">Gamification</h3>
-          <p class="mb-2">
-            I docenti possono definire obiettivi di studio su più livelli per
-            gli studenti. Il raggiungimento degli obiettivi fa guadagnare punti
-            e badge agli studenti.
-          </p>
-          <p>
-            Per ogni corso, è presente una classifica che indica gli studenti
-            più attivi. La sana componente competitiva incentiva gli studenti a
-            partecipare attivamente nella didattica e a rimanere in pari.
-          </p>
-        </div>
-        <div class="col-span-12 mt-0 md:mt-8 lg:mt-0 md:col-span-7">
-          <img
-            style="filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1))"
-            src="assets/leaderboard-n-gamification-panel-min.png"
-          />
-        </div>
-        <div
-          class="hidden w-full col-span-12 mb-32 -mt-20 md:block md:mt-0 lg:mt-32 md:mb-0 md:col-span-5"
-        >
-          <h3 class="mb-4 text-2xl font-medium">Gamification</h3>
-          <p class="mb-2">
-            I docenti possono definire obiettivi di studio su più livelli per
-            gli studenti. Il raggiungimento degli obiettivi fa guadagnare punti
-            e badge agli studenti.
-          </p>
-          <p>
-            Per ogni corso, è presente una classifica che indica gli studenti
-            più attivi. La sana componente competitiva incentiva gli studenti a
-            partecipare attivamente nella didattica e a rimanere in pari.
-          </p>
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- feature description-->
-      <section
-        id="threads"
-        class="relative grid grid-cols-12 my-10 md:gap-x-4 lg:gap-x-10 md:gap-y-0 gap-y-4"
-      >
-        <div class="w-full col-span-12 my-auto mb-auto md:col-span-5">
-          <h3 class="mb-4 text-2xl font-medium">Social learning</h3>
-          <p class="mb-2">
-            In aggiunta a consultare le soluzioni scritte dai docenti, gli
-            studenti possono proprorre le proprie soluzioni per gli esercizi
-            pubblici.
-          </p>
-          <p>
-            Tutti possono votare e commentare le soluzioni pubblicate dagli
-            altri studenti, favorendo così la condivisione di conoscenza e
-            contribuendo a trovare metodi alternativi per risolvere gli
-            esercizi.
-          </p>
-        </div>
-        <!-- style="transform: translateX(1%)" -->
-        <div class="col-span-12 md:-mr-24 md:col-span-7">
-          <img class="" src="assets/exercise-solution-min.png" />
-          <!-- <img
-            class="md:hidden"
-            src="img/min/exercise-thread-framed-2-min.png"
+        <!-- animated icon -->
+        <div>
+          <!-- <embed
+            style="width: 500px"
+            class="animated"
+            id="freepik_stories-nerd"
+            src="assets/animation-1.svg"
           /> -->
-        </div>
-      </section>
-      <!-- end feature description -->
-
-      <!-- demo -->
-      <!-- <section id="demo" class="flex flex-col items-center mt-20 md:mt-40">
-        <h3 class="mb-4 text-2xl text-center opacity-60">
-          Prova le potenzialità di Evo Learning in prima persona
-        </h3>
-
-        <a href="https://try.evo-learning.com"
-          ><button
-            class="flex items-center px-4 py-3 text-lg text-white bg-blue-600 rounded elevated feature-icon-container grad-bg hover:bg-blue-800"
-          >
-            <span
-              style="
-                filter: invert(100%) sepia(49%) saturate(1934%)
-                  hue-rotate(177deg) brightness(104%) contrast(102%);
-                font-size: 30px;
-              "
-              class="mr-2 text-3xl text-white material-icons-two-tone"
-            >
-              rocket_launch
-            </span>
-
-            <span class="text-3xl">Inizia una demo</span>
-          </button></a
-        >
-      </section> -->
-
-      <!-- support us -->
-      <section id="donate" class="flex flex-col items-center mt-20 md:mt-40">
-        <h3 class="mb-4 text-4xl text-center">Supporta il progetto</h3>
-        <p class="text-lg text-center">
-          Evo è un
-          <a
-            class="grad-bg link hover:text-blue-900"
-            href="https://github.com/Evo-Learning-project"
-            >progetto open source</a
-          >. Se vuoi supportarne lo sviluppo, considera di effettuare una
-          donazione per il progetto.
-        </p>
-        <p class="mb-8 text-lg text-center">Ti ringraziamo in anticipo!</p>
-
-        <a href="https://paypal.me/bsamusp00?country.x=IT&locale.x=it_IT"
-          ><button
-            class="flex items-center px-4 py-3 text-lg text-white bg-blue-600 rounded elevated feature-icon-container grad-bg hover:bg-blue-800"
-          >
-            <span
-              style="
-                filter: invert(100%) sepia(49%) saturate(1934%)
-                  hue-rotate(177deg) brightness(104%) contrast(102%);
-                font-size: 30px;
-              "
-              class="mr-2 text-3xl text-white material-icons-two-tone"
-            >
-              volunteer_activism
-            </span>
-
-            <span class="text-3xl">Dona</span>
-          </button></a
-        >
-      </section>
-
-      <!-- customers -->
-      <section class="mt-20 md:flex md:mt-32">
-        <div class="flex flex-col items-center mx-auto">
-          <h3 class="mb-4 text-2xl opacity-60">Utilizzato da</h3>
-          <a href="https://evo.di.unipi.it" class=""
-            ><div class="p-4 rounded feature-icon-container grad-bg w-max">
-              <img src="img/unipi.svg" style="width: 350px" /></div
-          ></a>
-        </div>
-      </section>
-
-      <!-- numbers -->
-      <section class="mt-20 -mx-0 md:mt-40 md:-mx-12 lg:-mx-0">
-        <h3 class="mb-4 text-4xl font-medium text-center">I nostri numeri</h3>
-        <div class="flex flex-wrap items-center place-content-evenly">
-          <!-- number section -->
-          <div
-            id="numbers-section"
-            class="flex flex-col items-center mt-8 space-y-3"
-          >
-            <div class="flex items-center space-x-2">
-              <p
-                class="text-5xl material-symbols-outlined grad-bg"
-                style="color: var(--grad-end)"
-              >
-                school
-              </p>
-              <h4 class="text-5xl" id="number-1">872</h4>
-            </div>
-            <p class="text-xl">Studenti</p>
-          </div>
-          <!-- end number section -->
-
-          <!-- number section -->
-          <div class="flex flex-col items-center mt-8 space-y-3">
-            <div class="flex items-center space-x-2">
-              <p
-                class="text-5xl material-symbols-outlined grad-bg"
-                style="color: var(--grad-end)"
-              >
-                topic
-              </p>
-              <h4 class="text-5xl" id="number-2">1787</h4>
-            </div>
-            <p class="text-xl">Esercizi</p>
-          </div>
-          <!-- end number section -->
-
-          <!-- number section -->
-          <div class="flex flex-col items-center mt-8 space-y-3">
-            <div class="flex items-center space-x-2">
-              <p
-                class="text-5xl material-symbols-outlined grad-bg"
-                style="color: var(--grad-end)"
-              >
-                fitness_center
-              </p>
-              <h4 class="text-5xl" id="number-3">10102</h4>
-            </div>
-            <p class="text-xl text-center w-60">Simulazioni d'esame</p>
-          </div>
-          <!-- end number section -->
-
-          <!-- number section -->
-          <div class="flex flex-col items-center mt-8 space-y-3">
-            <div class="flex items-center space-x-2">
-              <p
-                class="text-5xl material-symbols-outlined grad-bg"
-                style="color: var(--grad-end)"
-              >
-                assignment
-              </p>
-              <h4 class="text-5xl" id="number-4">65</h4>
-            </div>
-            <p class="text-xl">Prove d'esame</p>
-          </div>
-          <!-- end number section -->
-        </div>
-      </section>
-
-      <!-- contact -->
-      <div class="block w-full mt-20 md:flex md:mt-32">
-        <!--
-          style="
-            box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
-              rgba(60, 64, 67, 0.15) 0 2px 6px 2px !important;
-          "
-        -->
-        <div
-          class="flex flex-col items-center px-32 py-10 mx-auto mb-4 space-y-4 border border-blue-600 rounded-md"
-        >
-          <h3 class="text-2xl">Domande?</h3>
-          <a href="mailto:info@evolearning.it"
-            ><button
-              class="px-3 py-2 text-lg text-white bg-blue-600 rounded feature-icon-container grad-bg hover:bg-blue-800"
-            >
-              Contattaci
-            </button></a
-          >
+          <iframe
+            class="overflow-visible"
+            style="width: 500px; height: 500px"
+            src="anim1.html"
+          ></iframe>
         </div>
       </div>
+
+      <!-- what's evo-->
+      <section class="flex flex-col items-center">
+        <img src="img/evo icon.png" class="w-16 mb-2" />
+        <h2 class="mt-2 mb-8 text-4xl font-medium uppercase">Cos'è Evo?</h2>
+        <p class="w-4/5 text-xl text-center" style="line-height: 1.55">
+          Evo Learning è una piattaforma di apprendimento online completa che
+          fornisce un'esperienza personalizzata agli studenti e consente ai
+          docenti di gestire ogni aspetto della didattica. Dalla pubblicazione
+          delle lezioni e la creazione degli esercizi, alla correzione delle
+          risposte, passando per le esercitazioni di preparazione all'esame, Evo
+          Learning permette ai docenti di raggiungere la massima produttività e
+          agli studenti di ottenere la migliore preparazione possibile
+          sfruttando meccaniche di social learning, gamificiation e funzionalità
+          di intelligenza artificiale.
+        </p>
+      </section>
+
+      <!-- partners -->
+      <section class="flex flex-col items-center mt-28">
+        <!-- divider -->
+        <div class="w-2/5 mb-14 bg-primary" style="height: 1px"></div>
+
+        <h2 class="mb-8 text-4xl font-medium uppercase">I nostri partner</h2>
+
+        <div class="flex items-center w-full place-content-evenly">
+          <img src="assets/unipi.png" class="w-1/6" />
+          <img src="assets/romagnatech.png" class="w-1/6" />
+          <img src="assets/casabufalini.png" class="w-1/6" />
+        </div>
+
+        <!-- divider -->
+        <div class="w-2/5 mt-6 bg-primary" style="height: 1px"></div>
+      </section>
+
+      <!-- features-->
+      <section class="flex flex-col items-center mt-28">
+        <h2 class="mb-8 text-4xl font-medium uppercase">Le funzionalità</h2>
+
+        <!-- feature icons-->
+        <div class="flex items-start mt-8 space-x-4">
+          <!-- coding exercises-->
+          <a class="carousel-anchor">
+            <div
+              class="flex flex-col items-center space-y-2 feature-block feature-inner-block"
+            >
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">code</div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Esercizi di programmazione</p>
+            </div>
+          </a>
+
+          <!-- material-->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">book</div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Materiale didattico</p>
+            </div>
+          </a>
+
+          <!-- stats-->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">
+                  insights
+                </div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Statistiche di performance</p>
+            </div>
+          </a>
+
+          <!-- gamification-->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">
+                  sports_esports
+                </div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Gamification</p>
+            </div>
+          </a>
+
+          <!-- social learning-->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">forum</div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Social Learning</p>
+            </div>
+          </a>
+
+          <!-- extensions -->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">
+                  extension
+                </div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Integrazioni</p>
+            </div>
+          </a>
+
+          <!-- tutoring-->
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">
+                  supervisor_account
+                </div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Tutoring</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- carousel -->
+        <section class="mt-20 carousel">
+          <div class="prev-arrow"></div>
+
+          <div class="carousel-sections-scroll">
+            <div class="carousel-sections">
+              <div class="carousel-section" style="">
+                <div class="flex items-center space-x-4">
+                  <img class="w-2/3" src="assets/js-exercise-student-min.png" />
+                  <div>
+                    <p class="mb-2">
+                      Tra le tante tipologie di domande supportate, Evo permette
+                      la creazione di esercizi di programmazione in vari
+                      linguaggi, tra cui JavaScript, TypeScript, C e Python. Il
+                      docente definisce dei test case utilizzati per verificare
+                      la correttezza delle soluzioni degli studenti.
+                    </p>
+                    <p class="mb-8">
+                      Il codice dello studente è eseguito da Evo insieme ai test
+                      case; lo studente ottiene un feedback istantaneo e il voto
+                      è calcolato automaticamente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-section" style="">
+                <div class="flex items-center space-x-4">
+                  <img class="w-2/3" src="assets/material-min.png" />
+                  <div>
+                    <p class="mb-2">
+                      Evo permette ai docenti di pubblicare lezioni e annunci,
+                      di creare sondaggi e di allegare alle lezioni contenuti
+                      multimediali. All'insegnante bastano pochi semplici passi
+                      per poter condividere qualsiasi tipologia di contenuto
+                      didattico con tutta la classe.
+                    </p>
+                    <p>
+                      Gli studenti possono accedere facilmente al materiale,
+                      condividerlo con altri e aggiungere commenti. Grazie al
+                      visualizzatore di file integrato, gli studenti possono
+                      visionare direttamente sulla piattaforma qualsiasi tipo di
+                      contenuto multimediale, che si tratti di un PDF, di un
+                      video o di un'immagine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-section" style="">
+                <div class="flex items-center space-x-4">
+                  <img class="w-2/3" src="assets/exam-stats-min.png" />
+                  <div>
+                    <p class="mb-2">
+                      I docenti hanno a disposizione viste, grafici e
+                      statistiche per tracciare l'andamento degli studenti, sia
+                      nei singoli esami che globalmente.
+                    </p>
+                    <p>
+                      È possibile tenere traccia di quali sono gli esercizi con
+                      più risposte errate, della distribuzione di voti nelle
+                      prove d'esame, e dell'attività di ciascuno studente
+                      all'interno dei corsi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-section" style="">
+                <div class="flex items-center space-x-4">
+                  <img
+                    class="w-1/2"
+                    src="assets/leaderboard-n-gamification-panel-min.png"
+                  />
+                  <div>
+                    <p class="mb-2">
+                      I docenti possono definire obiettivi di studio su più
+                      livelli per gli studenti. Il raggiungimento degli
+                      obiettivi fa guadagnare punti e badge agli studenti.
+                    </p>
+                    <p>
+                      Per ogni corso, è presente una classifica che indica gli
+                      studenti più attivi. La sana componente competitiva
+                      incentiva gli studenti a partecipare attivamente nella
+                      didattica e a rimanere in pari.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-section" style="">
+                <div class="flex items-center space-x-4">
+                  <img class="w-2/3" src="assets/exercise-solution-min.png" />
+                  <div>
+                    <p class="mb-2">
+                      In aggiunta a consultare le soluzioni scritte dai docenti,
+                      gli studenti possono proprorre le proprie soluzioni per
+                      gli esercizi pubblici.
+                    </p>
+                    <p>
+                      Tutti possono votare e commentare le soluzioni pubblicate
+                      dagli altri studenti, favorendo così la condivisione di
+                      conoscenza e contribuendo a trovare metodi alternativi per
+                      risolvere gli esercizi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="next-arrow"></div>
+        </section>
+
+        <!-- <div class="carousel-dots">
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div> -->
+
+        <!-- kpi -->
+        <section class="w-full mt-20">
+          <!-- <div class="flex">
+            <img src="assets/iphone-n-mac-min.png" />
+          </div> -->
+          <div class="flex items-center">
+            <div>
+              <iframe
+                class="overflow-visible"
+                style="width: 500px; height: 500px"
+                src="anim2.html"
+              ></iframe>
+            </div>
+            <div class="flex flex-col items-center w-full">
+              <h2 class="mb-8 text-4xl font-medium uppercase">
+                I numeri di Evo
+              </h2>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  id="numbers-section"
+                  class="flex flex-col items-center mt-8 space-y-3"
+                >
+                  <div class="flex items-center space-x-2">
+                    <p class="text-5xl material-symbols-outlined kpi-icon">
+                      school
+                    </p>
+                    <h4 class="text-5xl" id="number-1">872</h4>
+                  </div>
+                  <p class="text-xl">Studenti</p>
+                </div>
+                <!-- end number section -->
+
+                <!-- number section -->
+                <div class="flex flex-col items-center mt-8 space-y-3">
+                  <div class="flex items-center space-x-2">
+                    <p class="text-5xl material-symbols-outlined kpi-icon">
+                      topic
+                    </p>
+                    <h4 class="text-5xl" id="number-2">1787</h4>
+                  </div>
+                  <p class="text-xl">Esercizi</p>
+                </div>
+                <!-- end number section -->
+
+                <!-- number section -->
+                <div class="flex flex-col items-center mt-8 space-y-3">
+                  <div class="flex items-center space-x-2">
+                    <p class="text-5xl material-symbols-outlined kpi-icon">
+                      fitness_center
+                    </p>
+                    <h4 class="text-5xl" id="number-3">10102</h4>
+                  </div>
+                  <p class="text-xl text-center w-60">Simulazioni d'esame</p>
+                </div>
+                <!-- end number section -->
+
+                <!-- number section -->
+                <div class="flex flex-col items-center mt-8 space-y-3">
+                  <div class="flex items-center space-x-2">
+                    <p class="text-5xl material-symbols-outlined kpi-icon">
+                      assignment
+                    </p>
+                    <h4 class="text-5xl" id="number-4">65</h4>
+                  </div>
+                  <p class="text-xl">Prove d'esame</p>
+                </div>
+                <!-- end number section -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
 
-    <!-- <div
-      class="relative"
-      style="width: 180%; bottom: -400px; margin-top: -40rem; left: -40rem"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,234.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-    </div> -->
-    <footer class="px-12 pb-4 text-purple-200" style="padding-top: 200px">
+    <footer class="px-12 pb-4 text-purple-200 mt-96" style="padding-top: 200px">
+      <a href="https://storyset.com/people">People illustrations by Storyset</a>
       <div class="relative z-50 flex flex-col h-full">
         <p class="mt-auto">
           Crafted with ❤️ by
@@ -692,5 +434,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="carousel.js"></script>
   </body>
 </html>
