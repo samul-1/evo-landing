@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@800;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="screenshot-frames.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Sarabun", sans-serif;
+      }
+      .competitor-icon {
+        width: 70px;
+      }
+      table {
+        border-collapse: collapse;
+        row-gap: 5px;
+        margin: 20px;
+      }
+      th {
+        /* border-bottom: 1px solid black; */
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+      }
+      td {
+        border: 1px solid rgb(182, 182, 182);
+        padding: 5px 27px 5px 27px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .text-primary {
+        color: #6a16f0;
+        font-size: 42px !important;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+        margin-top: 8px !important;
+      }
+      .feature-desc {
+        color: #6a16f0;
+        /* background-color: #ecd9ff !important; hwb(263 9% 6% / 0.168); */
+        background: linear-gradient(
+          150deg,
+          rgba(236, 217, 255, 1) 0%,
+          rgba(216, 179, 254, 0.6) 50%
+        );
+
+        font-size: 17px;
+        font-weight: 600;
+        width: 300px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      tr {
+        height: 72px !important;
+        background: linear-gradient(
+          150deg,
+          rgba(254, 254, 254, 0.6) 0%,
+          rgba(241, 241, 241, 0.5) 40%
+        );
+      }
+      th {
+        background-color: white !important;
+      }
+      .t2 {
+        border-collapse: separate;
+        border-spacing: 0 0.25rem;
+      }
+      .t2 td {
+        border: 0;
+        /* background-color: #f6f6f6; */
+      }
+      .t2 tr:nth-of-type(2) td:first-of-type {
+        border-top-left-radius: 7px;
+      }
+      .t2 tr:nth-of-type(2) td:last-of-type {
+        border-top-right-radius: 7px;
+      }
+      .t2 tr:last-of-type td:first-of-type {
+        border-bottom-left-radius: 7px;
+      }
+      .t2 tr:last-of-type td:last-of-type {
+        border-bottom-right-radius: 7px;
+      }
+      .t3 th {
+        font-size: 22px;
+        font-weight: 500;
+        color: #363636;
+      }
+      .t3 th:first-of-type {
+        font-size: 28px;
+        font-weight: 500;
+      }
+      .conto-text {
+        font-size: 20px;
+      }
+      .t3 tr {
+        height: 120px !important;
+      }
+      .t3 .feature-desc {
+        font-size: 22.5px;
+      }
+    </style>
+
+    <title>Evo Learning</title>
+  </head>
+  <body class="">
+    <div class="my-20">
+      <table class="t2 t3">
+        <tr>
+          <th>Conto Economico</th>
+          <!-- <th>2022</th> -->
+          <th>2023 E</th>
+          <th>2024 E</th>
+          <th>2025 E</th>
+        </tr>
+        <!-- programming exercises-->
+        <tr>
+          <td class="feature-desc">Ricavi di vendita</td>
+          <td>
+            <div class="conto-text">€ 23.100</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 149.200</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 403.900</div>
+          </td>
+        </tr>
+        <!-- gamification -->
+        <tr>
+          <td class="feature-desc">Margine di contribuzione</td>
+
+          <td>
+            <div class="conto-text">€ 14.114</div>
+          </td>
+
+          <td>
+            <div class="conto-text">€ 128.200</div>
+          </td>
+
+          <td>
+            <div class="conto-text">€ 363.900</div>
+          </td>
+        </tr>
+
+        <!-- practice -->
+        <tr>
+          <td class="feature-desc">Totale costi operativi</td>
+          <td>
+            <div class="conto-text">€ 25.000</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 83.750</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 135.250</div>
+          </td>
+        </tr>
+
+        <!-- multimedia material viewer -->
+        <tr>
+          <td class="feature-desc">Reddito operativo lordo</td>
+          <td>
+            <div class="conto-text">&minus; € 10.886</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 44.450</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 228.650</div>
+          </td>
+        </tr>
+
+        <!-- random exams -->
+        <tr>
+          <td class="feature-desc">Reddito operativo netto</td>
+          <td>
+            <div class="conto-text">&minus; € 11.186</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 43.410</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 219.670</div>
+          </td>
+        </tr>
+
+        <!-- tagging -->
+        <tr>
+          <td class="feature-desc">Utile netto</td>
+          <td>
+            <div class="conto-text">&minus; € 17.495</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 29.085</div>
+          </td>
+          <td>
+            <div class="conto-text">€ 146.375</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
