@@ -34,9 +34,9 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 150ms all ease-in;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(184, 184, 184, 1);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(184, 184, 184, 1);
-  box-shadow: 0px 2px 5px 0px rgba(184, 184, 184, 1);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
+  box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
 }
 
 .prev-arrow {
@@ -47,9 +47,9 @@
 }
 .prev-arrow:hover,
 .next-arrow:hover {
-  -webkit-box-shadow: 0px 2px 13px 0px rgba(128, 128, 128, 1);
-  -moz-box-shadow: 0px 2px 13px 0px rgba(128, 128, 128, 1);
-  box-shadow: 0px 2px 13px 0px rgba(128, 128, 128, 1);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
+  box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
 }
 
 .prev-arrow:after {
