@@ -2,7 +2,7 @@
 <html>
   <body>
     <svg
-      class="animated"
+      class=""
       id="freepik_stories-formula"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
@@ -2902,5 +2902,13 @@
         </filter>
       </defs>
     </svg>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.setTimeout(
+          () => document.querySelector("svg").classList.add("animated"),
+          1000
+        );
+      });
+    </script>
   </body>
 </html>

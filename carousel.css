@@ -2,7 +2,6 @@
   margin: 24px 0px 12px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: 100%;
 }
 
@@ -26,17 +25,17 @@
 .next-arrow {
   z-index: 10;
   position: absolute;
-  height: 24px;
-  width: 24px;
+  height: 38px;
+  width: 38px;
   margin: 0px 12px;
   background-color: rgba(115, 5, 253, 0.2);
   color: rgb(115, 5, 253);
   border-radius: 50%;
   cursor: pointer;
   transition: 150ms all ease-in;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
-  box-shadow: 0px 2px 2px 0px rgba(184, 184, 184, 1);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(184, 184, 184, 0.5);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(184, 184, 184, 0.5);
+  box-shadow: 0px 0px 3px 0px rgba(184, 184, 184, 0.5);
 }
 
 .prev-arrow {
@@ -47,16 +46,16 @@
 }
 .prev-arrow:hover,
 .next-arrow:hover {
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
-  -moz-box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
-  box-shadow: 0px 2px 8px 0px rgba(128, 128, 128, 1);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(128, 128, 128, 0.5);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 6px 0px rgba(128, 128, 128, 0.5);
 }
 
 .prev-arrow:after {
   font-family: "Material Symbols Outlined";
   content: "chevron_left";
   position: absolute;
-  font-size: 20px;
+  font-size: 28px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -66,7 +65,7 @@
   font-family: "Material Symbols Outlined";
   content: "chevron_right";
   position: absolute;
-  font-size: 20px;
+  font-size: 28px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

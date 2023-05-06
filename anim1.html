@@ -2,7 +2,7 @@
 <html lang="en">
   <body>
     <svg
-      class="animated"
+      class=""
       id="freepik_stories-nerd"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
@@ -1775,5 +1775,14 @@
         </filter>
       </defs>
     </svg>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.setTimeout(
+          () => document.querySelector("svg").classList.add("animated"),
+          250
+        );
+      });
+    </script>
   </body>
 </html>
