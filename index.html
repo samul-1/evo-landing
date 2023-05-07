@@ -21,6 +21,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
     <script src="script.js" defer></script>
 
@@ -42,6 +46,12 @@
 
     <link rel="stylesheet" href="carousel.css" />
 
+    <!-- material components-->
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -49,9 +59,53 @@
       body {
         /* font-family: "Sarabun", sans-serif; */
         font-family: "Montserrat", sans-serif;
+        --mdc-theme-primary: #730af8;
+        --mdc-typography-button-letter-spacing: 0.0292857143rem;
       }
       .font-mono {
         font-family: "Chivo Mono", monospace !important;
+      }
+      .force-hidden {
+        display: none !important;
+      }
+    </style>
+
+    <style>
+      .book-demo-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      .stacked-icons {
+        position: relative;
+        display: inline-block;
+      }
+
+      .stacked-icons .material-icons {
+        position: absolute;
+        font-size: 24px;
+      }
+
+      .stacked-icons .checkmark {
+        top: 2px;
+        right: 2px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #28a745;
+        border-radius: 50%;
+        padding: 2px;
+      }
+
+      .stacked-icons + .book-demo-text {
+        margin-left: 8px;
       }
     </style>
 
@@ -63,7 +117,7 @@
     <main class="mx-4 xl:mx-40 lg:mx-20 md:mx-12">
       <!-- logo -->
       <img
-        class="w-11/12 mx-auto mb-12 -mt-2 md:mt-6 md:mb-4 md:w-2/5"
+        class="w-11/12 mx-auto mt-4 mb-12 md:mt-0 lg:mt-6 md:mb-4 md:w-2/3 xl:w-2/5"
         src="img/logo.png"
         alt="Evo"
       />
@@ -77,10 +131,45 @@
             La piattaforma di e-learning
             <span class="text-primary">più viola</span> d'Italia
           </h1>
-          <p class="mt-6 md:text-lg lg:text-xl lg:mt-10">
+          <p class="mt-6 mb-6 md:text-lg lg:text-xl lg:mt-10">
             L'efficienza incontra la flessibilità. Insegna e impara quando vuoi,
             dove vuoi, come vuoi!
           </p>
+          <a href="#cta-section">
+            <button
+              type="submit"
+              class="mdc-button mdc-button--raised"
+              style="
+                padding: 20px 25px 20px 25px !important;
+                font-size: 16px !important;
+              "
+            >
+              <!-- <i aria-hidden="true" class="material-icons mdc-button__icon">
+                event_available
+              </i> -->
+              <svg
+                class="material-icons mdc-button__icon"
+                style="width: 22px; height: auto; margin-top: -1px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <title>calendar-play</title>
+                <!-- calendar icon -->
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"
+                />
+
+                <!-- play icon -->
+                <path
+                  transform="translate(6.1, 8.5) scale(0.5)"
+                  d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"
+                />
+              </svg>
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Prenota una demo</span>
+            </button>
+          </a>
         </div>
         <!-- animated icon -->
         <div>
@@ -130,6 +219,17 @@
         <div
           class="grid items-start grid-cols-3 mt-8 gap-y-8 lg:gap-x-16 md:gap-x-12 md:grid-cols-4 xl:gap-0 xl:space-x-4 xl:flex"
         >
+          <a class="carousel-anchor">
+            <div class="flex flex-col items-center space-y-2 feature-block">
+              <div class="feature-icon-container">
+                <div class="material-symbols-outlined feature-icon">
+                  fitness_center
+                </div>
+              </div>
+              <!-- t -->
+              <p class="text-xs text-center">Esercitazioni personalizzate</p>
+            </div>
+          </a>
           <!-- coding exercises-->
           <a class="carousel-anchor">
             <div
@@ -218,18 +318,6 @@
               <p class="text-xs text-center">Tutoring</p>
             </div>
           </a>
-
-          <a class="carousel-anchor">
-            <div class="flex flex-col items-center space-y-2 feature-block">
-              <div class="feature-icon-container">
-                <div class="material-symbols-outlined feature-icon">
-                  fitness_center
-                </div>
-              </div>
-              <!-- t -->
-              <p class="text-xs text-center">Esercitazioni personalizzate</p>
-            </div>
-          </a>
         </div>
 
         <!-- carousel -->
@@ -237,7 +325,34 @@
           <div class="prev-arrow"></div>
 
           <div class="carousel-sections-scroll">
-            <div class="carousel-sections">
+            <div class="items-center carousel-sections">
+              <!-- practice -->
+              <div class="carousel-section" style="">
+                <div
+                  class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+                >
+                  <img
+                    class="w-full md:w-3/5 lg:w-7/12"
+                    src="assets/ipad-practice-landscape.png"
+                  />
+                  <div class="text-center md:text-left">
+                    <p class="mb-2 text-left">
+                      Evo Learning permette agli studenti di esercitarsi a
+                      seconda delle loro specifiche esigenze attingendo a un
+                      ampio database di esercizi, di avere la correzione
+                      automatica delle risposte e di proporre soluzioni ai
+                      docenti avendo il loro feedback.
+                    </p>
+                    <p class="">
+                      Per uno studente, creare un'esercitazione è facilissimo:
+                      seleziona gli argomenti, il numero di esercizi, ed è tutto
+                      pronto!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- programming exercises -->
               <div class="carousel-section" style="">
                 <div
                   class="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
@@ -263,9 +378,10 @@
                 </div>
               </div>
 
+              <!-- material -->
               <div class="carousel-section" style="">
                 <div
-                  class="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
+                  class="flex flex-col items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:flex-row"
                 >
                   <img class="md:w-2/3" src="assets/material-min.png" />
                   <div class="text-center md:text-left">
@@ -288,6 +404,7 @@
                 </div>
               </div>
 
+              <!-- stats -->
               <div class="carousel-section" style="">
                 <div
                   class="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
@@ -309,6 +426,7 @@
                 </div>
               </div>
 
+              <!-- gamification -->
               <div class="carousel-section" style="">
                 <div
                   class="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
@@ -333,6 +451,7 @@
                 </div>
               </div>
 
+              <!-- social learning -->
               <div class="carousel-section" style="">
                 <div
                   class="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
@@ -356,6 +475,58 @@
                   </div>
                 </div>
               </div>
+
+              <!-- integrations -->
+              <div class="carousel-section" style="">
+                <div class="flex flex-col items-center space-y-8">
+                  <img
+                    class="w-1/2 md:w-1/3 lg:w-1/4"
+                    src="assets/evo_classroom.png"
+                  />
+                  <div class="text-center md:text-left">
+                    <p class="mb-2">
+                      La funzionalità di integrazione con Google Classroom di
+                      Evo Learning offre un'esperienza di apprendimento completa
+                      e senza interruzioni. Grazie all'integrazione, è possibile
+                      sincronizzare automaticamente con Classroom tutti i dati
+                      del corso, inclusi materiali didattici, annunci, esami,
+                      voti, consegne e iscrizioni degli studenti.
+                    </p>
+                    <p>
+                      Grazie a questa funzionalità, i docenti possono usufruire
+                      di un potente strumento di insegnamento online,
+                      risparmiando tempo prezioso e migliorando l'esperienza
+                      degli studenti su tutto il corso di studio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- tutoring -->
+              <div class="carousel-section" style="">
+                <div
+                  class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-8"
+                >
+                  <img
+                    class="w-full md:w-1/2 xl:w-1/3"
+                    src="assets/tutoring.png"
+                  />
+                  <div class="text-center md:text-left">
+                    <p class="mb-2">
+                      Con il sistema di ricerca tutor, Evo Learning connette gli
+                      studenti che vogliono prendere ripetizioni coi migliori
+                      tutor disponibili.
+                    </p>
+                    <p>
+                      Abbiamo semplificato il processo di connessione tra gli
+                      studenti e i tutor più qualificati. Che tu stia cercando
+                      aiuto per una materia specifica o desideri un supporto
+                      completo, Evo Learning ti mette in contatto con gli
+                      insegnanti più adatti alle tue esigenze.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -375,7 +546,10 @@
           </div> -->
           <div class="flex flex-col items-center md:flex-row md:flex-y-0">
             <div>
-              <object class="animation-frame" data="anim2.html"></object>
+              <object
+                class="animation-frame animation-frame-2"
+                data="anim2.html"
+              ></object>
             </div>
             <div class="flex flex-col items-center w-full">
               <h2 class="mb-8 text-4xl font-medium uppercase">
@@ -389,7 +563,7 @@
                 >
                   <div class="flex items-center space-x-4">
                     <p
-                      class="text-4xl md:text-5xl material-symbols-outlined kpi-icon"
+                      class="text-4xl lg:text-5xl material-symbols-outlined kpi-icon"
                     >
                       school
                     </p>
@@ -405,7 +579,7 @@
                 <div class="flex flex-col items-center mt-8 space-y-3">
                   <div class="flex items-center space-x-4">
                     <p
-                      class="text-4xl md:text-5xl material-symbols-outlined kpi-icon"
+                      class="text-4xl lg:text-5xl material-symbols-outlined kpi-icon"
                     >
                       topic
                     </p>
@@ -421,7 +595,7 @@
                 <div class="flex flex-col items-center mt-8 space-y-3">
                   <div class="flex items-center space-x-4">
                     <p
-                      class="text-4xl md:text-5xl material-symbols-outlined kpi-icon"
+                      class="text-4xl lg:text-5xl material-symbols-outlined kpi-icon"
                     >
                       fitness_center
                     </p>
@@ -439,7 +613,7 @@
                 <div class="flex flex-col items-center mt-8 space-y-3">
                   <div class="flex items-center space-x-4">
                     <p
-                      class="text-4xl md:text-5xl material-symbols-outlined kpi-icon"
+                      class="text-4xl lg:text-5xl material-symbols-outlined kpi-icon"
                     >
                       assignment
                     </p>
@@ -455,6 +629,68 @@
           </div>
         </section>
       </section>
+
+      <!-- cta -->
+      <section
+        id="cta-section"
+        class="px-6 py-6 mt-12 rounded md:px-10 md:py-10 md:mt-14 bg-gray-50"
+      >
+        <div class="flex flex-col items-center" id="cta-form-container">
+          <h3 class="mb-2 text-2xl font-medium uppercase">Prenota una demo</h3>
+          <p class="mb-8 text-center md:w-4/5">
+            Scopri tutte le potenzialità di Evo Learning prenotando una demo
+            interattiva. Ti ricontatteremo entro 2 giorni lavorativi e saremo
+            lieti di rispondere a tutte le tue domande.
+          </p>
+          <form id="cta-form" class="flex items-center mx-auto space-x-4">
+            <label
+              class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon md:w-72 lg:w-96"
+            >
+              <span class="mdc-text-field__ripple"></span>
+              <span class="mdc-floating-label" id="email-label"
+                >Indirizzo email</span
+              >
+              <!-- <span class="mdc-text-field__affix mdc-text-field__affix--prefix"
+              >$</span
+            > -->
+
+              <i
+                class="material-icons mdc-text-field__icon mdc-text-field__icon--leading text-primary"
+                aria-hidden="true"
+                >email</i
+              >
+              <input
+                class="mdc-text-field__input"
+                type="email"
+                aria-labelledby="email-label"
+                required
+                id="email"
+              />
+              <span class="mdc-line-ripple"></span>
+            </label>
+
+            <button
+              id="cta-send"
+              type="submit"
+              class="mdc-button mdc-button--raised"
+            >
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Invia</span>
+            </button>
+          </form>
+        </div>
+        <div class="flex flex-col items-center force-hidden" id="cta-success">
+          <div class="flex items-center mb-2 space-x-2">
+            <h3 class="text-2xl font-medium uppercase">Grazie</h3>
+            <span class="ml-1 text-3xl">&#128513;</span>
+          </div>
+
+          <p class="text-center">
+            Ti ricontatteremo entro 2 giorni lavorativi per accordarci per una
+            demo interattiva di Evo Learning.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer
@@ -465,8 +701,8 @@
       <div
         class="grid grid-cols-3 mt-auto mb-4 text-sm md:mb-0 gap-y-4 md:gap-y-12 md:text-base"
       >
-        <!-- <div class="flex items-center justify-around text-sm md:text-base"> -->
-        <div class="flex items-center">
+        <!-- TODO uncomment when ready -->
+        <!-- <div class="flex items-center">
           <p class="m-auto">
             Privacy <span class="hidden md:inline">policy</span>
           </p>
@@ -478,11 +714,8 @@
           <p class="m-auto">
             Termini <span class="hidden md:inline">e condizioni</span>
           </p>
-        </div>
-        <!-- </div>
-        <div
-          class="flex flex-col items-center justify-between space-y-2 md:space-y-0 md:flex-row"
-        > -->
+        </div> -->
+
         <div class="flex items-center col-span-3 mt-4 md:col-span-1 md:mt-0">
           <a class="m-auto" href="https://storyset.com/people"
             >People illustrations by Storyset</a
@@ -491,15 +724,13 @@
         <div class="flex items-center col-span-3 md:col-span-1">
           <p class="m-auto text-base">Evo Learning &copy; 2023</p>
         </div>
-        <!-- <p class="">
-            Crafted with ❤️ by
-            <a class="text-blue-300 hover:underline" href="https://bsamu.it"
-              >Samuele Bonini</a
-            >
-          </p> -->
+
         <div class="flex items-center col-span-3 md:col-span-1">
           <div class="flex items-center m-auto space-x-2">
-            <a>
+            <a
+              href="https://www.facebook.com/people/Evo-Learning/100089713296157/"
+              target="_blank"
+            >
               <svg
                 class="social-icon"
                 style="width: 40px; fill: currentColor"
@@ -524,7 +755,10 @@
                 />
               </svg>
             </a> -->
-            <a>
+            <a
+              href="https://www.linkedin.com/company/evo-learning/"
+              target="_blank"
+            >
               <svg
                 class="social-icon"
                 style="width: 40px; fill: currentColor"
@@ -537,7 +771,10 @@
                 />
               </svg>
             </a>
-            <a>
+            <a
+              href="https://www.youtube.com/channel/UCMeX1LVbqBstdJYQuvWO2aQ"
+              target="_blank"
+            >
               <svg
                 class="social-icon"
                 style="width: 40px; fill: currentColor"
@@ -557,11 +794,30 @@
       </div>
     </footer>
 
+    <aside class="mdc-snackbar">
+      <div
+        class="mdc-snackbar__surface"
+        role="status"
+        aria-relevant="additions"
+      >
+        <div class="mdc-snackbar__label" aria-atomic="false">
+          Si è verificato un errore. Riprova.
+        </div>
+      </div>
+    </aside>
+
     <script src="carousel.js"></script>
+
+    <script src="cta.js"></script>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script>
-      document.getElementById("anim2frame").onload = function () {
-        console.log("myframe is loaded");
-      };
+      const textField = new mdc.textField.MDCTextField(
+        document.querySelector(".mdc-text-field")
+      );
+      const buttonRipple = new mdc.ripple.MDCRipple(
+        document.querySelector(".mdc-button")
+      );
     </script>
   </body>
 </html>

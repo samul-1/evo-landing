@@ -2,6 +2,8 @@ const prevBtn = document.querySelector("div.prev-arrow");
 const nextBtn = document.querySelector("div.next-arrow");
 const sectionContainer = document.querySelector("div.carousel-sections");
 
+let gotoHandle = null;
+
 prevBtn.onclick = prev;
 nextBtn.onclick = next;
 
@@ -30,17 +32,25 @@ function render() {
       ? anchor.classList.add("active")
       : anchor.classList.remove("active");
   });
+
+  clearTimeout(gotoHandle);
+  gotoHandle = setTimeout(next, 5000);
+}
+
+function mod(n, m) {
+  return ((n % m) + m) % m;
 }
 
 function prev() {
-  if (currentIndex < 0) return;
-  currentIndex -= 1;
+  console.log(currentIndex);
+  currentIndex = mod(currentIndex - 1, slides.length);
+  console.log(currentIndex);
+
   render();
 }
 
 function next() {
-  if (currentIndex === slides.length - 1) return;
-  currentIndex += 1;
+  currentIndex = mod(currentIndex + 1, slides.length);
   render();
 }
 

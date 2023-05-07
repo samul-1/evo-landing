@@ -86,7 +86,7 @@ min .feature-block p {
 }
 
 .text-primary {
-  color: rgb(115, 5, 253);
+  color: rgb(115, 5, 253) !important;
 }
 
 .bg-primary {
@@ -100,6 +100,39 @@ min .feature-block p {
     linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
   background-position: 0%;
   background-size: cover;
+}
+
+@media (min-width: 320px) {
+  #heading {
+    height: 11vh;
+    background: url(img/hero-bg-lifted-min.png);
+    background: url(img/hero-bg-lifted-min.png),
+      linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
+    background-position: 11%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  #heading {
+    height: 15vh;
+    background: url(img/hero-bg-lifted-min.png);
+    background: url(img/hero-bg-lifted-min.png), white;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 821px) {
+  #heading {
+    height: 20vh;
+    background: url(img/hero-bg-lifted-min.png);
+    background: url(img/hero-bg-lifted-min.png),
+      linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
+    background-position: 0%;
+    background-size: cover;
+  }
 }
 
 .wave-container {
@@ -186,6 +219,10 @@ footer {
     width: 400px;
     height: 408px;
   }
+  .animation-frame-2 {
+    width: 340px;
+    height: 346px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -208,4 +245,9 @@ footer {
     width: 550px;
     height: 561px;
   }
+}
+
+/* darken on hover */
+.social-icon:hover {
+  filter: brightness(0.9);
 }
