@@ -42,10 +42,7 @@ function mod(n, m) {
 }
 
 function prev() {
-  console.log(currentIndex);
   currentIndex = mod(currentIndex - 1, slides.length);
-  console.log(currentIndex);
-
   render();
 }
 
