@@ -104,7 +104,7 @@ min .feature-block p {
 
 @media (min-width: 320px) {
   #heading {
-    height: 11vh;
+    height: 70px;
     background: url(img/hero-bg-lifted-min.png);
     background: url(img/hero-bg-lifted-min.png),
       linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
@@ -116,7 +116,7 @@ min .feature-block p {
 
 @media (min-width: 768px) {
   #heading {
-    height: 15vh;
+    height: 116px;
     background: url(img/hero-bg-lifted-min.png);
     background: url(img/hero-bg-lifted-min.png), white;
     background-size: contain;
@@ -126,10 +126,31 @@ min .feature-block p {
 
 @media (min-width: 821px) {
   #heading {
-    height: 20vh;
+    height: 165px;
     background: url(img/hero-bg-lifted-min.png);
     background: url(img/hero-bg-lifted-min.png),
       linear-gradient(180deg, rgba(115, 5, 253, 1) 70%, transparent 30%);
+    background-position: 0%;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  #heading {
+    height: 144px;
+    background: url(img/hero-bg-lifted-min.png);
+    background: url(img/hero-bg-lifted-min.png), white;
+    background-position: 0%;
+    background-size: cover;
+  }
+}
+
+/* even taller from laptop on */
+@media (min-width: 1280px) {
+  #heading {
+    height: 170px;
+    background: url(img/hero-bg-lifted-min.png);
+    background: url(img/hero-bg-lifted-min.png), white;
     background-position: 0%;
     background-size: cover;
   }
