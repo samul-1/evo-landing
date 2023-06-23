@@ -19,15 +19,15 @@ function animateValues() {
   }
 
   const ANIMATION_TIME = 2000;
-  animateValue(document.getElementById("number-1"), 1000, 1791, ANIMATION_TIME);
+  animateValue(document.getElementById("number-1"), 1000, 1831, ANIMATION_TIME);
   animateValue(document.getElementById("number-2"), 1000, 2285, ANIMATION_TIME);
   animateValue(
     document.getElementById("number-3"),
     10000,
-    37248,
+    45101,
     ANIMATION_TIME
   );
-  animateValue(document.getElementById("number-4"), 10, 85, ANIMATION_TIME);
+  animateValue(document.getElementById("number-4"), 10, 91, ANIMATION_TIME);
   animated = true;
 }
 
