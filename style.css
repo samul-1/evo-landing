@@ -148,7 +148,7 @@ min .feature-block p {
 /* even taller from laptop on */
 @media (min-width: 1280px) {
   #heading {
-    height: 170px;
+    height: 135px;
     background: url(img/hero-bg-lifted-min.png);
     background: url(img/hero-bg-lifted-min.png), white;
     background-position: 0%;
